@@ -1,0 +1,70 @@
+# Secrets et configuration locale (exemples assainis conservés)
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+/secrets/
+**/application-local.properties
+**/application-local.yml
+**/application-local.yaml
+
+# Fichiers temporaires et logs
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+/tmp/
+/temp/
+
+# Java et outils de build
+**/target/
+**/build/
+**/.gradle/
+*.class
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+# Ne pas ignorer les wrappers Maven/Gradle éventuellement versionnés plus tard.
+
+# Node / Angular et rapports générés
+**/node_modules/
+**/dist/
+**/.angular/
+**/.npm/
+**/coverage/
+**/playwright-report/
+**/test-results/
+*.tsbuildinfo
+
+# IDE et configuration personnelle
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# Le PDF de référence, les Markdown et les lockfiles ne sont pas ignorés.
+
+# État local Codex (sessions, authentification et configuration personnelle)
+.codex/
+
+# Caches locaux supplémentaires
+.cache/
+__pycache__/
+.pytest_cache/
+
+# Archive locale de revue Phase 0 (conservée hors suivi Git)
+/rihla-mr-phase0-review.tar.gz
